@@ -1,0 +1,95 @@
+﻿
+<!--
+Team SociConnect@ 2015
+Humber
+-->
+
+
+<!DOCTYPE html>
+
+<html ng-app="app">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Soci Connect 1.0.0.0</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/font-awesome.min.css" rel="stylesheet" />
+    <link href="Content/angular-gridster.min.css" rel="stylesheet" />
+    <link href="app/app.css" rel="stylesheet" />
+    <link href="dist/psFramework.css" rel="stylesheet" />
+
+    <!-- SociConnect Widget css -->
+    <link href="app/widgets/wwaNotification/wwaNotification.css" rel="stylesheet" />
+    <link href="app/widgets/wwaChat/wwaChat.css" rel="stylesheet" />
+    <link href="app/widgets/wwaStudent/wwaStudent.css" rel="stylesheet" />
+
+    <script src="Scripts/jquery-2.1.3.min.js"></script>
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/angular-animate.min.js"></script>
+    <script src="Scripts/angular-route.min.js"></script>
+    <script src="Scripts/angular-gridster.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/angular-ui/ui-bootstrap-tpls.min.js"></script>
+    <script src="Scripts/ngStorage.min.js"></script>
+
+    <script src="dist/psFramework.js"></script>
+    
+    <script src="app/appModule.js"></script>
+    <script src="app/appConfig.js"></script>
+    <script src="app/appRouteConfig.js"></script>
+    <script src="app/appController.js"></script>
+    <script src="app/services/dataService.js"></script>
+
+    <script src="app/directives/wwaDashboardDirective.js"></script>
+    <script src="app/directives/wwaGuidesDirective.js"></script>
+    <script src="app/directives/wwaLocationsDirective.js"></script>
+
+    <!-- SociConnect widget JavaScript-->
+    <script src="app/widgets/wwaNotification/wwaNotificationDirective.js"></script>
+    <script src="app/widgets/wwaChat/wwaChatDirective.js"></script>
+    <script src="app/widgets/wwaStudent/wwaStudentDirective.js"></script>
+
+    <!-- setting dialogs -->
+    <script src="app/dialogs/wwaSelectStudentController.js"></script>
+    <script src="app/dialogs/wwaSelectStudentController.js"></script>
+
+</head>
+<body class="container-fluid" ng-controller="appController">
+
+    <div ng-switch="state">
+        <div ng-switch-when="x authorized" class="sign-in-form">
+            <h2>Soci Connect</h2>
+            <h4>Sign In</h4>
+            <form>
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="text" class="form-control"/>
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" class="form-control"/>
+                </div>
+            </form>
+            <button class="btn btn-default" ng-click="signIn()">Sign In</button>
+        </div>
+        <div ng-switch-default>
+            <ps-framework title="Soci Connect"
+                          subtitle="Shake hands"
+                          icon-file="images/kayak-icon-flat.png">
+                <ps-menu>
+                    <ps-menu-item label="Inbox" icon="fa-inbox" route="inbox"></ps-menu-item>
+                    <ps-menu-item label="Calendar" icon="fa-calendar" route="calendar"></ps-menu-item>
+                    <ps-menu-item label="Soci Classroom" icon="fa-users" route="classroom"></ps-menu-item>
+                    <ps-menu-group label="Soci Files" icon="fa-file">
+                        <ps-menu-item label="Audio" icon="fa-file-audio-o" route="rafts"></ps-menu-item>
+                        <ps-menu-item label="Video" icon="fa-video-camera" route="paddles"></ps-menu-item>
+                        <ps-menu-item label="Documents" icon="fa-file-text-o" route="vests"></ps-menu-item>
+                    </ps-menu-group>
+                </ps-menu>
+            </ps-framework>
+        </div>
+    </div>
+
+
+</body>
+</html>
