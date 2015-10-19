@@ -1,0 +1,21 @@
+﻿
+<div class="wwa-student-widget">
+    <div class="wwa-student-heading">
+        <img class="wwa-student-icon" ng-src="images/employee.png" alt="employee" />
+        <span class="www-student-title">Student</span>
+    </div>
+    <div class="wwa-student-body">
+        <div class="wwa-student-row">
+            <div class="wwa-student-name-area">
+                <h4>STUDENT NAME</h4>
+                <p>{{selectedStudent.name}}</p>
+                <h4>COURSE</h4>
+                <p>{{selectedStudent.program}}</p>
+            </div>
+            
+            <div class="wwa-student-picture-area" ng-style="selectedStudent != null && {'background-image': 'url(/images/' + selectedStudent.image + ')'}">
+            </div>
+            
+    </div>
+
+</div>

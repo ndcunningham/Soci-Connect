@@ -1,0 +1,6 @@
+c:\users\sonu\documents\visual studio 2013\Projects\SPAFramework\SPAFramework\bin\SPAFramework.dll.config
+c:\users\sonu\documents\visual studio 2013\Projects\SPAFramework\SPAFramework\bin\SPAFramework.dll
+c:\users\sonu\documents\visual studio 2013\Projects\SPAFramework\SPAFramework\bin\SPAFramework.pdb
+c:\users\sonu\documents\visual studio 2013\Projects\SPAFramework\SPAFramework\obj\Debug\SPAFramework.dll
+c:\users\sonu\documents\visual studio 2013\Projects\SPAFramework\SPAFramework\obj\Debug\SPAFramework.pdb
+C:\Users\Sonu\documents\visual studio 2013\Projects\SPAFramework\SPAFramework\obj\Debug\SPAFramework.csprojResolveAssemblyReference.cache

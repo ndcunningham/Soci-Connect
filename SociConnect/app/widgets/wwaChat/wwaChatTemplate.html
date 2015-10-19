@@ -1,0 +1,37 @@
+﻿
+<div class="wwa-chat-widget">
+
+    <div class="wwa-chat-heading">
+        <img class="wwa-chat-icon" ng-src="images/inventory-icon.png" alt="inventory" />
+        <span class="www-chat-title">ChatterBox</span>
+    </div>
+
+    <div class="wwa-chat-body" ng-style="selectedProgram != null && {'background-image': 'url(/images/' + selectedProgram.image + ')'}">
+        <div class="wwa-chat-area">
+
+            <div class="wwa-chat-river-name">
+                {{ selectedProgram.name }}
+            </div>
+
+            <div class="wwa-chat-item">
+                <img src="/images/guide-icon.png" />
+                <span class="wwa-chat-amount">{{selectedProgram.credits}}</span>
+                <span class="wwa-chat-caption">Nishant</span>
+            </div>
+            <div class="wwa-chat-item">
+                <img src="/images/vest-icon.png" />
+                <span class="wwa-chat-amount">{{selectedProgram.name}}</span>
+                <span class="wwa-chat-caption">Nicholas</span>
+            </div>
+            <div class="wwa-chat-item">
+                <img src="/images/raft-icon.png" />
+                <span class="wwa-chat-amount">{{selectedProgram.name}}</span>
+                <span class="wwa-chat-caption">Saurabh</span>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
