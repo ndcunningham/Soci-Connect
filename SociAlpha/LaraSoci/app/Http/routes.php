@@ -27,6 +27,15 @@ Route::get('logout', function (){
 	Session::forget('user');
 	return redirect('index');
 });
+
+Route::get('chatroom', function (){
+	return view('Chat.index');
+});
+
+Route::get('classroom', function (){
+	return view('classroom.live');
+});
+
 Route::get('users', 'UserController@index');
 
 Route::get('users/create', 'UserController@create');
