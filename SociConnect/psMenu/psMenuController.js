@@ -3,7 +3,6 @@
 angular.module('psMenu').controller('psMenuController',
     ['$scope', '$rootScope',
         function ($scope, $rootScope) {
-
             $scope.isVertical = true;
             $scope.openMenuScope = null;
             $scope.showMenu = true;
