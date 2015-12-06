@@ -1,111 +1,110 @@
-@extends('layout.main')
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SOCI - CONNECT</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <script src="js/vendor/modernizr.js"></script>
+    <style type="text/css">
+    body {
+          background: #F0F0F3;
+        }
+        .login-box {
+          background: #fff;
+          border: 1px solid #ddd; 
+          margin: 100px 0;
+          padding: 40px 20px 0 20px;
+        }
+    </style>
+  </head>
+  <body>
+        
+      <div class="row">
+        <div class="large-12 columns">
+       
+           
+            <nav class="top-bar" data-topbar>
+              <ul class="title-area">
+                 
+                <li class="name">
+                  <h1>
+                      <a href="index.blade.php">
+                      HOME
+                    </a>
+                  </h1>
+                </li>
+                <li class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
+              </ul>
+       
+              <section class="top-bar-section">
+                <ul class="left">
+                    <li><a href="login.blade.php">LOGIN</a></li>
+                    <li><a href="register.blade.php">REGISTER</a></li>
+                    <li><a href="about.blade.php">ABOUT</a></li>
+                </ul>
+       
+                <ul class="right">
+                  <li class="search">
+                    <form>
+                      <input type="search">
+                    </form>
+                  </li>
+       
+                  <li class="has-button">
+                    <a class="small button" href="#">Search</a>
+                  </li>
+                </ul>
+              </section>
+            </nav>
+       </div>
+       </div>
 
-@section('content')
-<style type="text/css">
-.form-signin
-{
-    max-width: 330px;
-    padding: 15px;
-    margin: 0 auto;
-}
-.form-signin .form-signin-heading, .form-signin .checkbox
-{
-    margin-bottom: 10px;
-}
-.form-signin .checkbox
-{
-    font-weight: normal;
-}
-.form-signin .form-control
-{
-    position: relative;
-    font-size: 16px;
-    height: auto;
-    padding: 10px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-.form-signin .form-control:focus
-{
-    z-index: 2;
-}
-.form-signin input[type="text"]
-{
-    margin-bottom: -1px;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-}
-.form-signin input[type="password"]
-{
-    margin-bottom: 10px;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-}
-.account-wall
-{
-    margin-top: 20px;
-    padding: 40px 0px 20px 0px;
-    background-color: #f7f7f7;
-    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-}
-.login-title
-{
-    color: #555;
-    font-size: 18px;
-    font-weight: 400;
-    display: block;
-}
-.profile-img
-{
-    width: 96px;
-    height: 96px;
-    margin: 0 auto 10px;
-    display: block;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-}
-.need-help
-{
-    margin-top: 10px;
-}
-.new-account
-{
-    display: block;
-    margin-top: 10px;
-}
-</style>
+       <div class="large-3 large-centered columns">
+          <div class="login-box">
+          <div class="row">
+          <div class="large-12 columns">
+              <form method="POST" action="../../../../SociConnect/index.html">
+               <div class="row">
+                 <div class="large-12 columns">
+                     <input type="text" name="username" placeholder="Username" />
+                 </div>
+               </div>
+              <div class="row">
+                 <div class="large-12 columns">
+                     <input type="password" name="password" placeholder="Password" />
+                 </div>
+              </div>
+              <div class="row">
+                <div class="large-12 large-centered columns">
+                  <input type="submit" class="button expand" value="Log In"/>
+                </div>
+              </div>
+            </form>
 
-<div class="container">
-@if($errors->any())
-	@foreach($errors->all() as $error)
-		<div class="alert alert-danger" role="alert">{{ $error }} 
-		</div>
-	@endforeach
-@endif
-    <div class="row">
-        <div class="col-sm-6 col-md-4 col-md-offset-4">
-            <h1 class="text-center login-title">Sign in to continue to Soci-Connect</h1>
-            <div class="account-wall">
-                <img class="profile-img" src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=120"
-                    alt="">
-                {!! Form::open(array('url' => 'authenticate', 'class' => 'form-signin')) !!}
-	                <input type="text" class="form-control" placeholder="Email" name="Email" required autofocus>
-	                <input type="password" class="form-control" placeholder="Password" name="Password" required>
-	                <button class="btn btn-lg btn-primary btn-block" type="submit">
-	                    Sign in</button>
-	                <label class="checkbox pull-left">
-	                    <input type="checkbox" value="remember-me">
-	                    Remember me
-	                </label>
-	                <a href="#" class="pull-right need-help">Need help? </a><span class="clearfix"></span>
-                {!! Form::close() !!}
-            </div>
-            <a href="{{url ('/register')}}" class="text-center new-account">Create an account </a>
+              <p>Forgot Your password? <a href="login.blade.php">Recover it here! &raquo</a></p>
+          </div>
         </div>
-    </div>
-</div>
-@stop
+        </div>
+        </div>
+        <footer class="row">
+          <div class="large-12 columns">
+            <hr>
+            <div class="row">
+              <div class="large-6 columns">
+                <p>© Soci-Connect - 2015</p>
+              </div>
+              <div class="large-6 columns">
+                <ul class="inline-list right">
+                  <li><a href="#">Facebook</a></li>
+                  <li><a href="#">Twitter</a></li>
+                  <li><a href="#">LinkedIn</a></li>
+                  <li><a href="#">Google+</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
+        </body>
+        </head>
+        </html>
