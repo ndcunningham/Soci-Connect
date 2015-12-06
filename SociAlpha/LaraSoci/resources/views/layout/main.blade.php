@@ -36,15 +36,12 @@
                 <div class="content">
                     @yield('content')
                 </div>
+                <div>
+                <br/>
+                    @section('footer')
+                    &copy; 2015 - Soci-Connect
+                    @show
+                </div>
             </div><!-- /.container-fluid -->
-            
-
-
-            <div>
-                @section('footer')
-                &copy; 2015 - Soci-Connect
-                @show
-            </div>
-        </div>
     </body>
 </html>

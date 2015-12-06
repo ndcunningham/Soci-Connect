@@ -16,7 +16,7 @@ public function index(){
 		return view('roles.create');
 	}
 
-	public function getUser($id){
+	public function getRole($id){
 		$role = Users::find($id);
 		return view('roles.find')->with('roles', $roles);
 	}
