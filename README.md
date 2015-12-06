@@ -1,4 +1,4 @@
 # Soci-Connect
 Connecting ESDV Students through this Portal
 
-This project use Foundation Framework and Angular JS
+This project use Bootstrap, Laravel and Angular JS Framework
