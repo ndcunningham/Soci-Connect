@@ -28,7 +28,7 @@
 		{!! Form::select('Role' , $roles, ['class' => 'form-control']) !!}
 	</div>
 	<div>
-		<button type="submit" value="submit" class="btn btn-primary">Add User</button>
+		<button type="submit" value="submit" class="btn btn-primary">Register User</button>
 	</div>
 {!! Form::close() !!}
 @stop

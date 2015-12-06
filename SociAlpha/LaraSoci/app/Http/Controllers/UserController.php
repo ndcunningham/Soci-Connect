@@ -39,8 +39,24 @@ class UserController extends Controller {
             'Name' => $request['Name'],
             'Email' => $request['Email'],
             'Role_Id' =>$request['Role'],
-            'Password' => Hash::make($request['password']),
+            'Password' => Hash::make($request['Password']),
         ]);
 		return Redirect('users');
+	}
+
+	public function authenticate(Request $request){
+		$this->validate($request,
+		[
+			'Email'		=> 'required|email',
+			'Password'		=> 'required',
+		]);
+		$user = Users::where('Email', $request["Email"])->first();
+		if(isset($user) && Hash::check($user->Password, $request['Password']))
+			return redirect('login')->withErrors(['users.nonexistent' => "Wrong Username or Password"]);
+		else{
+			$request->session()->put('user',$user);
+			return redirect('index');
+		}
+
 	}
 }

@@ -8,10 +8,10 @@
 	@foreach($users as $user)
 	<tr>
 		<td>
-			<a href="{{ url('/user', $user->Id)}}">Update </a> &nbsp;
+			<a href="{{ url('/user', $user->Id)}}"> Update </a> &nbsp;
 		</td>
 		<td>
-			<a href="{{ url('/users/remove', $user->Id)}}">Delete </a>
+			<a href="{{ url('/users/remove', $user->Id)}}"> Delete </a> &nbsp;
 		</td>
 		<td>
 			{{$user->Name}} {{$user->Email}} <br/>

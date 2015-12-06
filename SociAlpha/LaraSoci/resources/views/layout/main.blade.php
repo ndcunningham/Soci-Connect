@@ -23,12 +23,24 @@
                       <a class="navbar-brand" href="#">Soci-Connect</a>
                     </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav"><li><a href="#">About</a></li></ul>
                       <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a href="#">Login <span class="sr-only">(current)</span></a></li>
+                      @if(!Session::has('user'))
+                        <li class="active"><a href="{{ url('/login')}}">Login <span class="sr-only">(current)</span></a></li>
                         <li><a href="#">Register</a></li>
-                        <li><a href="#">About</a></li>
+                        @else
+                        <div class="dropdown">
+                          <button class="btn btn-default dropdown-toggle navbar-btn" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            {{session('user')->Name}}
+                            <span class="caret"></span>
+                          </button>
+                          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li><a href="{{ url('/logout')}}">Logout</a></li>
+                          </ul>
+                        </div>
+                        @endif
                         </ul>
                         </div>
                     </div><!-- /.navbar-collapse -->

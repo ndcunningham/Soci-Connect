@@ -15,6 +15,18 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('login', function () {
+	return view('login');
+});
+
+Route::get('index', function (){
+	return view('index');
+});
+
+Route::get('logout', function (){
+	Session::forget('user');
+	return redirect('index');
+});
 Route::get('users', 'UserController@index');
 
 Route::get('users/create', 'UserController@create');
@@ -22,3 +34,5 @@ Route::get('users/create', 'UserController@create');
 Route::get('users/{Id}', 'UserController@getUser');
 
 Route::post('users','UserController@save');
+
+Route::post('authenticate','UserController@authenticate');
