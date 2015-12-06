@@ -83,7 +83,7 @@
 
 </head>
 
-<body onload="setInterval('chat.update()', 1000)"
+<body onload="setInterval('chat.update()', 1000)">
 <div class="container">
             <nav class="navbar navbar-default">
                 <div class="container-fluid">
@@ -141,6 +141,12 @@
                          </div>
                     </div>
                     </div>
+                </div>
+                <div>
+                <br/>
+                    @section('footer')
+                    &copy; 2015 - Soci-Connect
+                    @show
                 </div>
             </div>
 
