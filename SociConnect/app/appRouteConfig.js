@@ -4,19 +4,19 @@ angular.module('app').config(['$routeProvider', function ($routeProvider) {
 
     var routes = [
         {
-            url: '/dashboard',
+            url: '/inbox',
             config: {
                 template: '<wwa-dashboard></wwa-dashboard>'
             }
         },
         {
-            url: '/locations',
+            url: '/calendar',
             config: {
                 template: '<wwa-locations></wwa-locations>'
             }
         },
         {
-            url: '/guides',
+            url: '/classroom',
             config: {
                 template: '<wwa-guides></wwa-guides>'
             }

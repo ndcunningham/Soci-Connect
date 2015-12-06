@@ -5,7 +5,7 @@ angular.module('app').directive('wwaDashboard', ['$localStorage',
     return {
         scope: {
         },
-        template: '<ps-dashboard></ps-dashboard>',
+        template: '<ps-dashboard></ps-dashboard><iframe src="inbox/inbox.php" height="100%" width="100%"/>',
         link: function (scope) {
 
             scope.title = 'Workspace';
