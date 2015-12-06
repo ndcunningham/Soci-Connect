@@ -7,15 +7,9 @@
     <link rel="stylesheet" href="css/foundation.css" />
     <script src="js/vendor/modernizr.js"></script>
     <style type="text/css">
-    body {
-          background: #F0F0F3;
-        }
-        .login-box {
-          background: #fff;
-          border: 1px solid #ddd; 
-          margin: 100px 0;
-          padding: 40px 20px 0 20px;
-        }
+    a  .small .button{
+      background-color: #6fa910;
+    }
     </style>
   </head>
   <body>
@@ -57,36 +51,131 @@
                 </ul>
               </section>
             </nav>
-       </div>
-       </div>
-
-       <div class="large-3 large-centered columns">
-          <div class="login-box">
-          <div class="row">
-          <div class="large-12 columns">
-              <form method="POST" action="../../../../SociConnect/index.html">
-               <div class="row">
-                 <div class="large-12 columns">
-                     <input type="text" name="username" placeholder="Username" />
-                 </div>
-               </div>
-              <div class="row">
-                 <div class="large-12 columns">
-                     <input type="password" name="password" placeholder="Password" />
-                 </div>
-              </div>
-              <div class="row">
-                <div class="large-12 large-centered columns">
-                  <input type="submit" class="button expand" value="Log In"/>
-                </div>
-              </div>
-            </form>
-
-              <p>Forgot Your password? <a href="login.blade.php">Recover it here! &raquo</a></p>
+       
+           
+        
           </div>
         </div>
+       
+       
+        <div class="row">
+          <div class="large-12 columns">
+       
+           
+       
+            <div class="hide-for-small">
+              <div id="featured">
+                    <img src="img/main.jpg" alt="slide image">
+                     
+                </div>
+              </div>
+       
+           
+       
+       
+           
+       
+       
+          <div class="row">
+            <div class="small-12 show-for-small"><br>
+                <img src="img/main.jpg" alt="slide image">
+            </div>
+          </div>    
+              
+          </div>
+        </div><br>
+       
+        <div class="row">
+          <div class="large-12 columns">
+            <div class="row">
+       
+           
+       
+              <div class="large-3 small-6 columns">
+                <img src="img/groupthumb.png"/>
+                <h6 class="panel">Groups</h6>
+              </div>
+       
+              <div class="large-3 small-6 columns">
+                <img src="img/classthumb.png"/>
+                <h6 class="panel">Current Lecture</h6>
+              </div>
+       
+              <div class="large-3 small-6 columns">
+                <img src="img/contentthumb.png"/>
+                <h6 class="panel">Content Sharing</h6>
+              </div>
+       
+              <div class="large-3 small-6 columns">
+                <img src="img/documentthumb.png"/>
+                <h6 class="panel">Documents</h6>
+              </div>
+       
+           
+       
+            </div>
+          </div>
         </div>
+       
+
+        <div class="row">
+          <div class="large-12 columns">
+            <div class="row">
+       
+           
+       
+              <div class="large-8 columns">
+                <div class="panel radius">
+       
+                <div class="row">
+                <div class="large-6 small-6 columns">
+       
+                  <h4>Latest News</h4><hr/>
+                  <h5 class="subheader"> <img src="img/talkit.png"/>
+                  </h5>
+       
+                <div class="show-for-small" align="center">
+                  <a href="#" class="small radius button">Call To Action!</a><br>
+       
+                  <a href="#" class="small radius button">Call To Action!</a>
+                </div>
+       
+                </div>
+                <div class="large-6 small-6 columns">
+       
+                  <p>Talk IT is a club that seeks the bridge the gap between students perception with all sections of the IT industry
+                    from an interactive approach. Pizza, interactive discussions, games and laughter are some of the experiences you should expect.
+                    Sounds Interesting? Why wait! <a href="#">Join Here</a>
+                </p>
+              </div>
+       
+              </div>
+              </div>
+              </div>
+       
+                <div class="large-4 columns hide-for-small">
+       
+                <h4>Get In Touch!</h4><hr/>
+       
+                <a class="large button expand" href="#">
+                  LETS GET TO TALKING!
+                </a>
+       
+                <a class="large button expand" href="#">
+                  IMPORTANT STUFF HERE
+                </a>
+       
+       
+              </div>
+       
+           
+       
+            </div>
+          </div>
         </div>
+       
+           
+       
         <footer class="row">
           <div class="large-12 columns">
             <hr>
@@ -105,6 +194,7 @@
             </div>
           </div>
         </footer>
-        </body>
-        </head>
-        </html>
+    
+   
+  </body>
+</html>
